@@ -1,0 +1,23 @@
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker build -t jkolden/docker-ot -f Dockerfile.dev .
+
+script:
+  - docker run -e CI=true jkolden/docker-ot npm run test -- --coverage
+
+deploy:
+  provider: elasticbeanstalk
+  region: "us-west-2"
+  app: "docker-ot"
+  env: "DockerOt-env"
+  bucket_name: "elasticbeanstalk-us-west-2-278001651727"
+  bucket_path: "docker-ot"
+  on:
+    branch: master
+  access_key_id:
+    secure: "$AWS_ACCESS_KEY"
+  secret_access_key:
+    secure: "$AWS_SECRET_KEY"
