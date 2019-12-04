@@ -45,17 +45,16 @@ export default function Profile(props) {
               style={{ backgroundImage: `url(${office2})` }}
             >
               <CardBody background>
-                <h6 className={classes.cardCategory}>PERSONAL PRODUCTIVITY</h6>
+                <h6 className={classes.cardCategory}>PTO Days Remaining</h6>
                 <Link to="/new-request" style={{ padding: 10 }}>
-                  <h3 className={classes.cardTitleWhite}>Request Overtime</h3>
+                  <h2 className={classes.cardTitleWhite}>5</h2>
                 </Link>
                 <p className={classes.cardDescription}>
-                  Request new overtime, edit existing unapproved requests and
-                  check the status of previously submitted requests.
+                  View current vacation usage and balance.
                 </p>
                 <Link to="/new-request">
                   <Button round color="danger">
-                    <Icon>content_copy</Icon> Make New Request
+                    <Icon>content_copy</Icon> View Details
                   </Button>
                 </Link>
               </CardBody>
@@ -68,20 +67,17 @@ export default function Profile(props) {
               style={{ backgroundImage: `url(${profile_city})` }}
             >
               <CardBody background>
-                <h6 className={classes.cardCategory}>MANAGEMENT</h6>
-                <Link to="/approval" style={{ padding: 10 }}>
-                  <h3
-                    className={classes.cardTitleWhite}
-                  >{`Manage My Requests (${requests.length})`}</h3>
+                <h6 className={classes.cardCategory}>CURRENT HOURLY RATE</h6>
+                <Link to="/my-hourly-rate" style={{ padding: 10 }}>
+                  <h2 className={classes.cardTitleWhite}>$26.50</h2>
                 </Link>
                 <p className={classes.cardDescription}>
-                  View, edit and manage my requests and requests submitted by my
-                  team.
+                  View current hourly rate calculation.
                 </p>
-                <Link to="/approval">
+                <Link to="/my-hourly-rate">
                   <Button round color="info">
                     <PageviewIcon />
-                    Review
+                    View Details
                   </Button>
                 </Link>
               </CardBody>

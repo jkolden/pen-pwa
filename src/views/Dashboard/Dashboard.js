@@ -1,14 +1,13 @@
 /*eslint-disable*/
 import React, { useState, useEffect } from "react";
-import { Route, withRouter } from "react-router-dom";
+import { Route, withRouter, Link } from "react-router-dom";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 
 //images
-import robert from "assets/img/faces/robertjackman.jpg";
-import anne from "assets/img/faces/Anne.jpg";
+import marc from "assets/img/faces/marc.jpg";
 
 // core components
 import Header from "components/Header/Header.js";
@@ -21,6 +20,8 @@ import Clearfix from "components/Clearfix/Clearfix.js";
 import Profile from "views/ProfilePage/ProfilePage.js";
 import NewRequestPage from "views/NewRequestPage/NewRequestPage.js";
 import ApprovalPage from "views/ApprovalPage/ApprovalPage.js";
+import MyBadgesPage from "views/MyBadgesPage/MyBadgesPage.js";
+import HourlyRatePage from "views/HourlyRatePage/HourlyRatePage.js";
 
 import profilePageStyle from "assets/jss/material-kit-pro-react/views/profilePageStyle.js";
 
@@ -77,7 +78,7 @@ function Dashboard() {
     <div>
       <Header
         color="transparent"
-        brand="Teekay"
+        brand="Penske"
         links={<HeaderLinks dropdownHoverColor="info" />}
         fixed
         changeColorOnScroll={{
@@ -86,7 +87,7 @@ function Dashboard() {
         }}
       />
       <Parallax
-        image={require("assets/img/teekay.jpg")}
+        image={require("assets/img/penske.jpg")}
         filter="dark"
         className={classes.parallax}
       />
@@ -96,11 +97,21 @@ function Dashboard() {
             <GridItem xs={12} sm={12} md={6}>
               <div className={classes.profile}>
                 <div>
-                  <img src={anne} alt="..." className={imageClasses} />
+                  <img src={marc} alt="..." className={imageClasses} />
                 </div>
                 <div className={classes.name}>
-                  <h3 className={classes.title}>Anne Dunsford</h3>
-                  <h6>Analyst</h6>
+                  <h3 className={classes.title}>Charles Brown</h3>
+                  <h6>
+                    Position:{" "}
+                    <Link to="/my-badges" style={{ padding: 10 }}>
+                      Tech 2
+                    </Link>
+                  </h6>
+
+                  <h6>Penske Star: 20090523</h6>
+                  <h6>Shift: 2nd</h6>
+                  <h6>On Call: Yes</h6>
+                  <h6>O/C Duration: 2 Months</h6>
                 </div>
               </div>
             </GridItem>
@@ -113,6 +124,8 @@ function Dashboard() {
                 <Profile requests={requests} setRequests={setRequests} />
               )}
             />
+            <Route path="/my-badges" render={() => <MyBadgesPage />} />
+            <Route path="/my-hourly-rate" render={() => <HourlyRatePage />} />
 
             <Route
               path="/new-request"

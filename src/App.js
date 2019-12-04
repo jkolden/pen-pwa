@@ -31,7 +31,7 @@ function App() {
     <div>
       <Router history={hist}>
         <Switch>
-          <Route path="/" component={Dashboard} name="Anne Dunsford" /> />
+          <Route path="/" component={Dashboard} name="Charles Brown" />
         </Switch>
       </Router>
     </div>
