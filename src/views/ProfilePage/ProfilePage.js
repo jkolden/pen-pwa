@@ -18,8 +18,9 @@ import Button from "components/CustomButtons/Button.js";
 
 import projectsStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/projectsStyle.js";
 
-import office2 from "assets/img/examples/office2.jpg";
-import profile_city from "assets/img/examples/profile_city.jpg";
+import office2 from "assets/img/office2.jpg";
+import penske_treeline from "assets/img/penske_treeline.jpg";
+import penske_truck from "assets/img/penske_truck.jpg";
 
 import profilePageStyle from "assets/jss/material-kit-pro-react/views/profilePageStyle.js";
 
@@ -42,7 +43,7 @@ export default function Profile(props) {
             <Card
               raised
               background
-              style={{ backgroundImage: `url(${office2})` }}
+              style={{ backgroundImage: `url(${penske_treeline})` }}
             >
               <CardBody background>
                 <h6 className={classes.cardCategory}>PTO Days Remaining</h6>
@@ -53,7 +54,7 @@ export default function Profile(props) {
                   View current vacation usage and balance.
                 </p>
                 <Link to="/new-request">
-                  <Button round color="danger">
+                  <Button round color="success">
                     <Icon>content_copy</Icon> View Details
                   </Button>
                 </Link>
@@ -64,7 +65,7 @@ export default function Profile(props) {
             <Card
               raised
               background
-              style={{ backgroundImage: `url(${profile_city})` }}
+              style={{ backgroundImage: `url(${penske_truck})` }}
             >
               <CardBody background>
                 <h6 className={classes.cardCategory}>CURRENT HOURLY RATE</h6>
