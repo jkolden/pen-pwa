@@ -5,8 +5,9 @@ import { makeStyles } from "@material-ui/core/styles";
 
 // @material-ui/icons
 import Dashboard from "@material-ui/icons/Dashboard";
-import Schedule from "@material-ui/icons/Schedule";
-
+import LocalShippingIcon from "@material-ui/icons/LocalShipping";
+import SettingsIcon from "@material-ui/icons/Settings";
+import BuildIcon from "@material-ui/icons/Build";
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
@@ -39,7 +40,7 @@ export default function MyBadgesPage() {
                 tabs={[
                   {
                     tabButton: "Reefer",
-                    tabIcon: Dashboard,
+                    tabIcon: BuildIcon,
                     tabContent: (
                       <span>
                         <h3>Reefer</h3>
@@ -66,7 +67,7 @@ export default function MyBadgesPage() {
                   },
                   {
                     tabButton: "Brakes",
-                    tabIcon: Schedule,
+                    tabIcon: LocalShippingIcon,
                     tabContent: (
                       <span>
                         <h3>Brakes</h3>
@@ -102,7 +103,7 @@ export default function MyBadgesPage() {
                   },
                   {
                     tabButton: "Badge 3",
-                    tabIcon: Dashboard,
+                    tabIcon: SettingsIcon,
                     tabContent: (
                       <span>
                         <h3>Badge 3</h3>

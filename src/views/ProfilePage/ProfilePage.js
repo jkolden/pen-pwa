@@ -47,13 +47,13 @@ export default function Profile(props) {
             >
               <CardBody background>
                 <h6 className={classes.cardCategory}>PTO Days Remaining</h6>
-                <Link to="/new-request" style={{ padding: 10 }}>
+                <Link to="/my-hourly-rate" style={{ padding: 10 }}>
                   <h2 className={classes.cardTitleWhite}>5</h2>
                 </Link>
                 <p className={classes.cardDescription}>
                   View current vacation usage and balance.
                 </p>
-                <Link to="/new-request">
+                <Link to="/my-hourly-rate">
                   <Button round color="success">
                     <Icon>content_copy</Icon> View Details
                   </Button>

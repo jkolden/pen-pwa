@@ -17,7 +17,7 @@
 import React, { useState, useEffect } from "react";
 //import ReactDOM from "react-dom";
 import { createBrowserHistory } from "history";
-import { Router, Route, Switch } from "react-router-dom";
+import { Router, Route, Switch, Redirect } from "react-router-dom";
 
 import "assets/scss/material-kit-pro-react.scss?v=1.8.0";
 
@@ -31,6 +31,7 @@ function App() {
     <div>
       <Router history={hist}>
         <Switch>
+          <Redirect from="/" exact to="/my-profile" />
           <Route path="/" component={Dashboard} name="Charles Brown" />
         </Switch>
       </Router>
