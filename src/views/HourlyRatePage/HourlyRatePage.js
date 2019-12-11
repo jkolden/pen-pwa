@@ -12,7 +12,6 @@ import Card from "components/Card/Card.js";
 import CardBody from "components/Card/CardBody.js";
 import CardFooter from "components/Card/CardFooter.js";
 import Button from "components/CustomButtons/Button.js";
-import NavPills from "components/NavPills/NavPills.js";
 import Success from "components/Typography/Success.js";
 import Danger from "components/Typography/Danger.js";
 
@@ -23,10 +22,10 @@ import city from "assets/img/examples/city.jpg";
 
 const useStyles = makeStyles(pricingStyle);
 
-export default function HourlyRatePage({ ...rest }) {
+export default function HourlyRatePage(props) {
   const classes = useStyles();
   return (
-    <div className="cd-section" {...rest}>
+    <div className="cd-section">
       <div
         className={classes.pricing + " " + classes.section}
         style={{ backgroundImage: `url(${city})` }}
@@ -45,8 +44,8 @@ export default function HourlyRatePage({ ...rest }) {
                 How your hourly rate is calculated
               </h2>
               <h5 className={classes.description}>
-                If you have questions please feel free to contact the Payroll
-                department or your manager.s
+                If you have questions about your current hourly rate please
+                contact the Payroll Department or your manager.
               </h5>
               <div className={classes.sectionSpace} />
             </GridItem>
@@ -64,9 +63,11 @@ export default function HourlyRatePage({ ...rest }) {
                     My Hourly Rate
                   </h6>
                   <h1 className={classes.cardTitleWhite}>
-                    <small>$</small> 26.50 <small>/hr</small>
+                    <small>$</small>
+                    {props.status == "COM" ? "28.00" : "26.50"}
+                    <small>/hr</small>
                   </h1>
-                  <DetailCalc />
+                  <DetailCalc status={props.status} />
                 </CardBody>
                 <CardFooter pricing className={classes.justifyContentCenter}>
                   <Button color="white" round>

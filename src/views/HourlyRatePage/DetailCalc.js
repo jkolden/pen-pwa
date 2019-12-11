@@ -14,21 +14,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const PurpleSwitch = withStyles({
-  switchBase: {
-    color: "green"[300],
-    "&$checked": {
-      color: "green"[500]
-    },
-    "&$checked + $track": {
-      backgroundColor: "green"[500]
-    }
-  },
-  checked: {},
-  track: {}
-})(Switch);
-
-export default function DetailCalc() {
+export default function DetailCalc(props) {
   const classes = useStyles();
 
   return (
@@ -67,6 +53,20 @@ export default function DetailCalc() {
             />
           </ListItemSecondaryAction>
         </ListItem>
+        {props.status == "COM" ? (
+          <ListItem>
+            <ListItemText id="brakes" primary="Brakes" />
+            <ListItemText id="brakes-rate" primary="$1.50/hr" />
+            <ListItemSecondaryAction>
+              <Switch
+                color="primary"
+                edge="end"
+                checked={true}
+                inputProps={{ "aria-labelledby": "switch-list-label-wifi" }}
+              />
+            </ListItemSecondaryAction>
+          </ListItem>
+        ) : null}
       </List>
     </Fragment>
   );

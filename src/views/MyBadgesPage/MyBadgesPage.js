@@ -4,7 +4,6 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 
 // @material-ui/icons
-import Dashboard from "@material-ui/icons/Dashboard";
 import LocalShippingIcon from "@material-ui/icons/LocalShipping";
 import SettingsIcon from "@material-ui/icons/Settings";
 import BuildIcon from "@material-ui/icons/Build";
@@ -20,8 +19,11 @@ import BrakesBadgePage from "views/BrakesBadgePage/BrakesBadgePage";
 
 const useStyles = makeStyles(pillsStyle);
 
-export default function MyBadgesPage() {
+export default function MyBadgesPage(props) {
   const classes = useStyles();
+
+  // eslint-disable-next-line react/prop-types
+
   return (
     <div className={classes.section}>
       <div className={classes.container}>
@@ -72,7 +74,11 @@ export default function MyBadgesPage() {
                       <span>
                         <h3>Brakes</h3>
                         <h4>$1.50/hr Premium</h4>
-                        <Badge color="info">In Process</Badge>
+                        {props.status == "COM" ? (
+                          <Badge color="success">Complete</Badge>
+                        ) : (
+                          <Badge color="info">In Process</Badge>
+                        )}
 
                         <Accordion
                           activeColor="default"

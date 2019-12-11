@@ -27,7 +27,6 @@ import profilePageStyle from "assets/jss/material-kit-pro-react/views/profilePag
 const useStyles = makeStyles(profilePageStyle);
 
 export default function Profile(props) {
-  const { requests, setRequests } = props;
   React.useEffect(() => {
     window.scrollTo(0, 0);
     document.body.scrollTop = 0;
@@ -70,7 +69,9 @@ export default function Profile(props) {
               <CardBody background>
                 <h6 className={classes.cardCategory}>CURRENT HOURLY RATE</h6>
                 <Link to="/my-hourly-rate" style={{ padding: 10 }}>
-                  <h2 className={classes.cardTitleWhite}>$26.50</h2>
+                  <h2 className={classes.cardTitleWhite}>
+                    {props.status == "COM" ? "$28.00" : "$26.50"}
+                  </h2>
                 </Link>
                 <p className={classes.cardDescription}>
                   View current hourly rate calculation.

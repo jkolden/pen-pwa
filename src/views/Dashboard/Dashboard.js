@@ -28,6 +28,8 @@ import profilePageStyle from "assets/jss/material-kit-pro-react/views/profilePag
 const useStyles = makeStyles(profilePageStyle);
 
 function Dashboard() {
+  const [status, setStatus] = useState({});
+
   React.useEffect(() => {
     window.scrollTo(0, 0);
     document.body.scrollTop = 0;
@@ -39,39 +41,11 @@ function Dashboard() {
     classes.imgFluid
   );
 
-  const [requests, setRequests] = useState([]);
-
   useEffect(() => {
-    fetch("https://apex.oracle.com/pls/apex/myfusion/ot/requests")
-      .then(response => response.json())
-      .then(data => setRequests(data.items));
+    fetch("https://apex.oracle.com/pls/apex/myfusion/penske/badges/61")
+      .then(res => res.json())
+      .then(data => setStatus(data.items[0].checkliststatus));
   }, []);
-
-  const handleEdit = request => {
-    request.status = "Approved";
-    let filtered = requests.filter(req => req.id != request.id).concat(request);
-    setRequests([...filtered]);
-  };
-
-  const handleCreate = request => {
-    fetch("https://apex.oracle.com/pls/apex/myfusion/ot/requests", {
-      headers: {
-        "Content-Type": "application/json"
-      },
-      method: "POST",
-      body: JSON.stringify({
-        firstname: request.firstName,
-        lastname: request.lastName,
-        hoursrequested: request.hoursRequested,
-        justification: request.justification,
-        periodstart: request.payPeriodStart
-      })
-    })
-      .then(response => response.json())
-      .then(data => {
-        setRequests([...requests, data]);
-      });
-  };
 
   const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
   return (
@@ -107,7 +81,6 @@ function Dashboard() {
                       Tech 2
                     </Link>
                   </h6>
-
                   <h6>Penske Star: 20090523</h6>
                   <h6>Shift: 2nd</h6>
                   <h6>On Call: Yes</h6>
@@ -120,32 +93,15 @@ function Dashboard() {
           <div>
             <Route
               path="/my-profile"
-              render={() => (
-                <Profile requests={requests} setRequests={setRequests} />
-              )}
-            />
-            <Route path="/my-badges" render={() => <MyBadgesPage />} />
-            <Route path="/my-hourly-rate" render={() => <HourlyRatePage />} />
-
-            <Route
-              path="/new-request"
-              render={() => (
-                <NewRequestPage
-                  requests={requests}
-                  handleCreate={handleCreate}
-                />
-              )}
+              render={() => <Profile status={status} />}
             />
             <Route
-              path="/approval"
-              render={() => (
-                <ApprovalPage
-                  requests={requests}
-                  handleCreate={handleCreate}
-                  handleEdit={handleEdit}
-                  setRequests={setRequests}
-                />
-              )}
+              path="/my-badges"
+              render={() => <MyBadgesPage status={status} />}
+            />
+            <Route
+              path="/my-hourly-rate"
+              render={() => <HourlyRatePage status={status} />}
             />
           </div>
 
