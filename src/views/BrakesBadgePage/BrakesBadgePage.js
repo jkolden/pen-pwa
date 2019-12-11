@@ -8,7 +8,7 @@ import typographyStyle from "assets/jss/material-kit-pro-react/views/componentsS
 
 const useStyles = makeStyles(typographyStyle);
 
-export default function BrakesBadgePage() {
+export default function BrakesBadgePage(props) {
   const classes = useStyles();
   return (
     <div>
@@ -25,7 +25,19 @@ export default function BrakesBadgePage() {
 
       <p className={classes.title}>Competencies</p>
       <span>Brakes </span>
-      <CustomLinearProgress variant="determinate" color="warning" value={60} />
+      {props.status == "COM" ? (
+        <CustomLinearProgress
+          variant="determinate"
+          color="success"
+          value={100}
+        />
+      ) : (
+        <CustomLinearProgress
+          variant="determinate"
+          color="warning"
+          value={60}
+        />
+      )}
       <p className={classes.title}>Ready for Assignment</p>
       <ul>
         <li>Replace Clutch Brake</li>

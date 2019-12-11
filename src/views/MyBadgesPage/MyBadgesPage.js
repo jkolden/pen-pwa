@@ -81,7 +81,7 @@ export default function MyBadgesPage(props) {
                         )}
 
                         <Accordion
-                          activeColor="default"
+                          activeColor="primary"
                           collapses={[
                             {
                               title: "Pit Stop 1: Drivetrain",
@@ -90,7 +90,7 @@ export default function MyBadgesPage(props) {
                             },
                             {
                               title: "Pit Stop 2: Brakes",
-                              content: <BrakesBadgePage />
+                              content: <BrakesBadgePage status={props.status} />
                             },
                             {
                               title: "Pit Stop 3: Steering/Suspension",
