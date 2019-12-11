@@ -105,7 +105,7 @@ export default function HourlyRatePage(props) {
                 <CardBody pricing plain>
                   <h3 className={classes.cardCategory}>Brakes Badge</h3>
                   <h1 className={classes.cardTitle}>
-                    <small>$</small> 1.00/hr
+                    <small>$</small> 1.50/hr
                   </h1>
                   <ul>
                     <li>
@@ -121,15 +121,15 @@ export default function HourlyRatePage(props) {
                       Brakes
                     </li>
                     <li>
-                      <Danger>
-                        <Close />
-                      </Danger>{" "}
+                      <Success>
+                        <Check />
+                      </Success>{" "}
                       Steering
                     </li>
                     <li>
-                      <Danger>
-                        <Close />
-                      </Danger>{" "}
+                      <Success>
+                        <Check />
+                      </Success>{" "}
                       Wheels/Tire
                     </li>
                   </ul>

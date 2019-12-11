@@ -10,8 +10,20 @@ const useStyles = makeStyles(typographyStyle);
 
 export default function BrakesBadgePage(props) {
   const classes = useStyles();
+  const linkStyle = {
+    color: "rgb(0,0,153)",
+    "font-weight": "bold"
+  };
+
   return (
     <div>
+      <a
+        style={linkStyle}
+        target="_blank"
+        href="https://ucf6-zhcq-fa-ext.oracledemos.com:443/hcmUI/faces/deeplink?objType=WLF_LEARN_SS_VIEW_COURSE&action=NONE&objKey=itemId%3D300000186248515"
+      >
+        Go To Learning >>
+      </a>
       <h4 className={classes.title}>Training Group</h4>
       <Badge>Lining</Badge>
       <Badge>Air Dryer</Badge>
