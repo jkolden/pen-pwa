@@ -56,6 +56,7 @@ export default function MyBadgesPage(props) {
                         )}
 
                         <Accordion
+                          active="1"
                           activeColor="primary"
                           collapses={[
                             {
