@@ -32,7 +32,8 @@ The solution consists of three components:
 ## Integrations
 
 This application uses the following cloud API's:
-![api](https://img.shields.io/badge/HCMDataLoader-SOAP-orange.svg)
+
+[![api](https://img.shields.io/badge/HCMDataLoader-SOAP-orange.svg?maxAge=2592000)](https://docs.oracle.com/en/solutions/load-data-into-hcm-cloud/use-hcm-data-loader-integration-web-service1.html)
 
 - [HCM Allocated Checklist](https://docs.oracle.com/en/cloud/saas/global-human-resources/19b/farws/op-allocatedchecklists-x-operations-0.html)
 - [ERP Integration Service (uploadFileToUcm)](https://docs.oracle.com/en/cloud/saas/financials/18c/oeswf/erp-integration-service-ErpIntegrationService-svc-9.html)
