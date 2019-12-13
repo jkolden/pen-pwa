@@ -8,9 +8,9 @@ This PaaS example was built to demonstrate how Penske can coordinate and manage 
 
 The solution consists of three components:
 
-- a desktop application built with Oracle Applications Express. All of the cloud SOAP and REST API's are contained within a PL/SQL package titled penske_pkg.
-- A REST API built with Oracle Rest Data Services that serves the data stored in the apex schema to the mobile UI.
-- a mobile UI built with React and deployed to the Oracle Cloud Infrastructure Kubernetes Cluster.
+- a desktop application built with [Oracle Applications Express](https://www.oracle.com/database/technologies/appdev/apex.html). All of the cloud SOAP and REST API's are contained within a PL/SQL package titled penske_pkg.
+- A REST API built with [Oracle Rest Data Services](https://www.oracle.com/database/technologies/appdev/rest.html) that serves the data stored in the apex schema to the mobile UI.
+- a mobile UI for employees to have visibility into how their hourly rate is calculated, their current learning progression and opportunities for additional learning/stipend increases. The mobile UI was built with [React](https://reactjs.org/) and deployed to the [Oracle Cloud Infrastructure Kubernetes Cluster](https://docs.cloud.oracle.com/iaas/Content/home.htm).
 
 ![Product Presentation Image](https://user-images.githubusercontent.com/21246211/70810064-ecd64300-1d77-11ea-89f5-85711316022d.png)
 
@@ -31,15 +31,11 @@ The solution consists of three components:
 
 ## Integrations
 
-This application uses the following cloud API's:
+This application uses the following Oracle Cloud ERP and HCM API's:
 
+[![erp](https://img.shields.io/badge/ERPIntegrationService-SOAP-orange.svg?maxAge=2592000)](https://docs.oracle.com/en/cloud/saas/financials/18c/oeswf/erp-integration-service-ErpIntegrationService-svc-9.html)
 [![api](https://img.shields.io/badge/HCMDataLoader-SOAP-orange.svg?maxAge=2592000)](https://docs.oracle.com/en/solutions/load-data-into-hcm-cloud/use-hcm-data-loader-integration-web-service1.html)
-[![erp](https://img.shields.io/badge/ERPIntegrationService-SOAP-orange.svg?maxAge=2592000)](https://docs.oracle.com/en/solutions/load-data-into-hcm-cloud/use-hcm-data-loader-integration-web-service1.html)
-[![erp](https://img.shields.io/badge/AllocatedChecklists-REST-green.svg?maxAge=2592000)](https://docs.oracle.com/en/cloud/saas/global-human-resources/19b/farws/api-allocated-checklists.html)
-
-- [HCM Allocated Checklist](https://docs.oracle.com/en/cloud/saas/global-human-resources/19b/farws/op-allocatedchecklists-x-operations-0.html)
-- [ERP Integration Service (uploadFileToUcm)](https://docs.oracle.com/en/cloud/saas/financials/18c/oeswf/erp-integration-service-ErpIntegrationService-svc-9.html)
-- [HCM Data Loader Integration Web Service](https://docs.oracle.com/en/solutions/load-data-into-hcm-cloud/use-hcm-data-loader-integration-web-service1.html)
+[![checklist](https://img.shields.io/badge/AllocatedChecklists-REST-green.svg?maxAge=2592000)](https://docs.oracle.com/en/cloud/saas/global-human-resources/19b/farws/api-allocated-checklists.html)
 
 ## Deployment
 
