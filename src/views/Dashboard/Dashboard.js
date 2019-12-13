@@ -22,6 +22,7 @@ import NewRequestPage from "views/NewRequestPage/NewRequestPage.js";
 import ApprovalPage from "views/ApprovalPage/ApprovalPage.js";
 import MyBadgesPage from "views/MyBadgesPage/MyBadgesPage.js";
 import HourlyRatePage from "views/HourlyRatePage/HourlyRatePage.js";
+import AboutUsPage from "views/AboutUsPage/AboutUsPage.js";
 
 import profilePageStyle from "assets/jss/material-kit-pro-react/views/profilePageStyle.js";
 

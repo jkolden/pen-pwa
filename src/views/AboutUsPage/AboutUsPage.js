@@ -35,7 +35,7 @@ export default function AboutUsPage() {
   return (
     <div>
       <Header
-        brand="Material Kit PRO React"
+        brand="Oracle Demo Engineering and Proposals"
         links={<HeaderLinks dropdownHoverColor="info" />}
         fixed
         color="transparent"
@@ -56,10 +56,12 @@ export default function AboutUsPage() {
                 classes.textCenter
               )}
             >
-              <h1 className={classes.title}>About Us</h1>
+              <h1 className={classes.title}>
+                About Demo Engineering and Proposals
+              </h1>
               <h4>
-                Meet the amazing team behind this project and find out more
-                about how we work.
+                Meet the team behind this project and find out more about how we
+                work.
               </h4>
             </GridItem>
           </GridContainer>
@@ -70,7 +72,6 @@ export default function AboutUsPage() {
           <SectionDescription />
           <SectionTeam />
           <SectionServices />
-          <SectionOffice />
           <SectionContact />
         </div>
       </div>

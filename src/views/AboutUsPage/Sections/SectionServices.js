@@ -31,8 +31,8 @@ export default function SectionServices() {
         >
           <h2 className={classes.title}>We build awesome products</h2>
           <h5 className={classes.description}>
-            This is the paragraph where you can write more details about your
-            product. Keep you user engaged by providing meaningful information.
+            PaaS solutions to meet every requirement. Mobile, desktop and
+            digital assistants. Integration with ERP, EPM, HCM and more.
           </h5>
         </GridItem>
       </GridContainer>
@@ -73,7 +73,7 @@ export default function SectionServices() {
         </GridItem>
         <GridItem md={4} sm={4}>
           <InfoArea
-            title="3. Make Edits"
+            title="3. Integrate"
             description={
               <span>
                 <p>

@@ -38,8 +38,7 @@ import Layers from "@material-ui/icons/Layers";
 import ShoppingBasket from "@material-ui/icons/ShoppingBasket";
 import LineStyle from "@material-ui/icons/LineStyle";
 import Error from "@material-ui/icons/Error";
-
-// core components
+import GitHub from "@material-ui/icons/GitHub";
 import CustomDropdown from "components/CustomDropdown/CustomDropdown.js";
 import Button from "components/CustomButtons/Button.js";
 
@@ -108,9 +107,13 @@ export default function HeaderLinks(props) {
             <Link to="/about-us" className={classes.dropdownLink}>
               <AccountBalance className={classes.dropdownIcons} /> About Us
             </Link>,
-            <Link to="/blog-post" className={classes.dropdownLink}>
-              <ArtTrack className={classes.dropdownIcons} /> Blog Post
-            </Link>,
+            <a
+              href="https://github.com/jkolden/penske"
+              target="_blank"
+              className={classes.dropdownLink}
+            >
+              <GitHub className={classes.dropdownIcons} /> Fork Me on GutHub
+            </a>,
             <Link to="/blog-posts" className={classes.dropdownLink}>
               <ViewQuilt className={classes.dropdownIcons} /> Blog Posts
             </Link>,

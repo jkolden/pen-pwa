@@ -14,9 +14,11 @@ import { makeStyles } from "@material-ui/core/styles";
 
 import teamStyle from "assets/jss/material-kit-pro-react/views/aboutUsSections/teamStyle.js";
 
-import FaceMarc from "assets/img/faces/marc.jpg";
+import FaceJen from "assets/img/faces/jen.jpg";
 import FaceChristian from "assets/img/faces/christian.jpg";
-import FaceKendall from "assets/img/faces/kendall.jpg";
+import FaceJohn from "assets/img/faces/john.png";
+import FaceDorothy from "assets/img/faces/dorothy.jpg";
+
 import FaceAvatar from "assets/img/faces/avatar.jpg";
 
 const useStyles = makeStyles(teamStyle);
@@ -35,27 +37,38 @@ export default function SectionTeam() {
             classes.textCenter
           )}
         >
-          <h2 className={classes.title}>We are nerd rockstars</h2>
+          <h2 className={classes.title}>Our Team</h2>
           <h5 className={classes.description}>
-            This is the paragraph where you can write more details about your
-            team. Keep you user engaged by providing meaningful information.
+            The Demo Engineering and Proposals Solution Engineering team enables
+            our customers (the Pillar Solution Engineer teams) to modernize how
+            they sell Oracle solutions. We provide consistent and repeatable
+            world class deliverables through product expertise coupled with
+            innovative approaches and thought leadership. We set the standard of
+            operational excellence for Oracle. Our team is valued and viewed as
+            trusted partners, we hold ourselves accountable to our commitments
+            and we foster a culture of collaboration to ensure our customers
+            ongoing success.
           </h5>
         </GridItem>
       </GridContainer>
       <GridContainer>
-        <GridItem md={3} sm={3}>
+        <GridItem md={4} sm={4}>
           <Card profile plain>
             <CardAvatar profile plain>
               <a href="#pablo">
-                <img src={FaceMarc} alt="profile-pic" className={classes.img} />
+                <img
+                  src={FaceDorothy}
+                  alt="profile-pic"
+                  className={classes.img}
+                />
               </a>
             </CardAvatar>
             <CardBody plain>
-              <h4 className={classes.cardTitle}>Alec Thompson</h4>
-              <h6 className={classes.textMuted}>CEO / Co-Founder</h6>
+              <h4 className={classes.cardTitle}>Dorothy Holstein Wallmann</h4>
+              <h6 className={classes.textMuted}>Manager</h6>
               <p className={classes.cardDescription}>
-                And I love you like Kanye loves Kanye. We need to restart the
-                human foundation.
+                Leader of the Demo Engineering HCM team driving customer success
+                for Oracle’s North American Applications organization.
               </p>
             </CardBody>
             <CardFooter className={classes.justifyContent}>
@@ -71,19 +84,15 @@ export default function SectionTeam() {
             </CardFooter>
           </Card>
         </GridItem>
-        <GridItem md={3} sm={3}>
+        <GridItem md={4} sm={4}>
           <Card profile plain>
             <CardAvatar profile plain>
               <a href="#pablo">
-                <img
-                  src={FaceKendall}
-                  alt="profile-pic"
-                  className={classes.img}
-                />
+                <img src={FaceJen} alt="profile-pic" className={classes.img} />
               </a>
             </CardAvatar>
             <CardBody plain>
-              <h4 className={classes.cardTitle}>Tania Andrew</h4>
+              <h4 className={classes.cardTitle}>Jennifer Crabb</h4>
               <h6 className={classes.textMuted}>DESIGNER</h6>
               <p className={classes.cardDescription}>
                 Don{"'"}t be scared of the truth because we need to restart the
@@ -103,57 +112,25 @@ export default function SectionTeam() {
             </CardFooter>
           </Card>
         </GridItem>
-        <GridItem md={3} sm={3}>
+        <GridItem md={4} sm={4}>
           <Card profile plain>
             <CardAvatar profile plain>
               <a href="#pablo">
-                <img
-                  src={FaceChristian}
-                  alt="profile-pic"
-                  className={classes.img}
-                />
+                <img src={FaceJohn} alt="profile-pic" className={classes.img} />
               </a>
             </CardAvatar>
             <CardBody plain>
-              <h4 className={classes.cardTitle}>Christian Mike</h4>
-              <h6 className={classes.textMuted}>Web Developer</h6>
+              <h4 className={classes.cardTitle}>John Kolden</h4>
+              <h6 className={classes.textMuted}>Developer</h6>
               <p className={classes.cardDescription}>
-                I love you like Kanye loves Kanye. Don{"'"}t be scared of the
-                truth because we need to restart the human foundation.
+                I build SaaS extensions for ERP and HCM demos that utilize
+                various web services and API's to integrate to Oracle's Cloud
+                applications.
               </p>
             </CardBody>
             <CardFooter className={classes.justifyContent}>
               <Button href="#pablo" justIcon simple color="facebook">
                 <i className="fab fa-facebook" />
-              </Button>
-              <Button href="#pablo" justIcon simple color="dribbble">
-                <i className="fab fa-dribbble" />
-              </Button>
-            </CardFooter>
-          </Card>
-        </GridItem>
-        <GridItem md={3} sm={3}>
-          <Card profile plain>
-            <CardAvatar profile plain>
-              <a href="#pablo">
-                <img
-                  src={FaceAvatar}
-                  alt="profile-pic"
-                  className={classes.img}
-                />
-              </a>
-            </CardAvatar>
-            <CardBody plain>
-              <h4 className={classes.cardTitle}>Rebecca Stormvile</h4>
-              <h6 className={classes.textMuted}>WEB DEVELOPER</h6>
-              <p className={classes.cardDescription}>
-                And I love you like Kanye loves Kanye. We really need to restart
-                the human foundation.
-              </p>
-            </CardBody>
-            <CardFooter className={classes.justifyContent}>
-              <Button href="#pablo" justIcon simple color="google">
-                <i className="fab fa-google" />
               </Button>
               <Button href="#pablo" justIcon simple color="twitter">
                 <i className="fab fa-twitter" />

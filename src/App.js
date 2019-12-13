@@ -20,6 +20,7 @@ import { createBrowserHistory } from "history";
 import { Router, Route, Switch, Redirect } from "react-router-dom";
 
 import "assets/scss/material-kit-pro-react.scss?v=1.8.0";
+import AboutUsPage from "views/AboutUsPage/AboutUsPage.js";
 
 // pages for this product
 import Dashboard from "views/Dashboard/Dashboard.js";
@@ -31,6 +32,7 @@ function App() {
     <div>
       <Router history={hist}>
         <Switch>
+          <Route path="/about-us" component={AboutUsPage} />
           <Redirect from="/" exact to="/my-profile" />
           <Route path="/" component={Dashboard} name="Charles Brown" />
         </Switch>
