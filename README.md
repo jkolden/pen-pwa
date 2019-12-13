@@ -2,9 +2,15 @@
 
 ![version](https://img.shields.io/badge/version-1.0-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/jkolden/penske.svg?maxAge=2592000)](https://github.com/jkolden/penske/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/jkolden/penske.svg?maxAge=2592000)](https://github.com/jkolden/penske/issues?q=is%3Aissue+is%3Aclosed) [![Join the chat at https://gitter.im/NIT-dgp/General](https://badges.gitter.im/NIT-dgp/General.svg)](https://gitter.im/creative-tim-general/Lobby) [![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/E4aHAQy)
 
-## Objective
+## Objective and Overview
 
 This PaaS example was built to demonstrate how Penske can coordinate and manage employee learning through a series of progressions referred to as "badges". Each badge is comprised of a series of learning courses. As badges are completed, checklists are sent to Oracle HCM so that they can be validated by a supervisor or manager. Upon validation, a pay element is sent to Oracle Payroll to be added to the employee's hourly stipend.
+
+The solution consists of three components:
+
+- a desktop application built with Oracle Applications Express. All of the cloud SOAP and REST API's are contained within a PL/SQL package titled penske_pkg.
+- A REST API built with Oracle Rest Data Services that serves the data stored in the apex schema to the mobile UI.
+- a mobile UI built with React and deployed to the Oracle Cloud Infrastructure Kubernetes Cluster.
 
 ![Product Presentation Image](https://user-images.githubusercontent.com/21246211/70810064-ecd64300-1d77-11ea-89f5-85711316022d.png)
 
