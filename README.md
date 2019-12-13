@@ -4,19 +4,13 @@
 
 ![Product Presentation Image](https://user-images.githubusercontent.com/21246211/70810064-ecd64300-1d77-11ea-89f5-85711316022d.png)
 
-![Mobile UI](https://user-images.githubusercontent.com/21246211/70810588-e98f8700-1d78-11ea-93cf-e66f66aa7cf6.png)
-
-**[Material Kit PRO React](https://demos.creative-tim.com/material-kit-pro-react/#/components)** is a beautiful resource built for Material Design. It was made over the powerful Material-UI. We used and have redesigned all components to make it look flat, minimalist and easy to use. We are proud of this new Material-UI skin and the possibilities for customisation.
-
-Using it is very simple and it will enable you to refresh you classic looking application. To get the desired effect you will also need to integrate ReactJS plugins that take a little bit more effort. In the end the result will be worth it.
-
-**[Material Kit PRO React](https://demos.creative-tim.com/material-kit-pro-react/#/components)** uses a framework built by our friend Olivier and his team - [Material-UI](https://material-ui.com/) and was created starting with [create-react-app](https://github.com/facebook/create-react-app), who did an amazing job creating the backbone for the material effects, animations, ripples and transitions. Big thanks to his team for the effort and forward thinking they put into it.
+![Mobile UI](https://user-images.githubusercontent.com/21246211/70811285-25771c00-1d7a-11ea-9994-a7cf9e776e36.png)
 
 ## Table of Contents
 
-- [Demo](#demo)
-- [Quick Start](#quick-start)
-- [Documentation](#documentation)
+- [Objective](#objective)
+- [Integrations](#integrations)
+- [Deployment](#deployment)
 - [File Structure](#file-structure)
 - [Browser Support](#browser-support)
 - [Resources](#resources)
@@ -25,20 +19,17 @@ Using it is very simple and it will enable you to refresh you classic looking ap
 - [Licensing](#licensing)
 - [Useful Links](#useful-links)
 
-## Demo
+## Integrations
 
-- [Index Page](https://demos.creative-tim.com/material-kit-pro-react/#/components)
-- [Buttons Section](https://demos.creative-tim.com/material-kit-pro-react/#/components#buttons)
-- [Navigation Section](https://demos.creative-tim.com/material-kit-pro-react/#/components#navigation)
-- [Notifications Section](https://demos.creative-tim.com/material-kit-pro-react/#/components#notifications)
-- [User profile page](https://demos.creative-tim.com/material-kit-pro-react/#/profile-page)
-- [Landing page](https://demos.creative-tim.com/material-kit-pro-react/#/landing-page)
+This application uses the following cloud API's:
 
-[View More](https://demos.creative-tim.com/material-kit-pro-react/#/components).
+- [HCM Allocated Checklist](https://docs.oracle.com/en/cloud/saas/global-human-resources/19b/farws/op-allocatedchecklists-x-operations-0.html)- [ERP Integration Service (uploadFileToUcm)](https://docs.oracle.com/en/cloud/saas/financials/18c/oeswf/erp-integration-service-ErpIntegrationService-svc-9.html)
+- [HCM Data Loader Integration Web Service](https://docs.oracle.com/en/solutions/load-data-into-hcm-cloud/use-hcm-data-loader-integration-web-service1.html)
 
-## Quick start
+## Deployment
 
-- Buy from [Creative Tim](https://www.creative-tim.com/product/material-kit-pro-react)
+- The client application is deployed in a single docker container running on Oracle Cloud Infrastructure Kubernetes Cluster.
+- The server application is an apex application running on apex.oracle.com.
 
 ## Documentation
 
