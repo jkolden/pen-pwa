@@ -112,7 +112,7 @@ export default function HeaderLinks(props) {
               target="_blank"
               className={classes.dropdownLink}
             >
-              <GitHub className={classes.dropdownIcons} /> Fork Me on GutHub
+              <GitHub className={classes.dropdownIcons} /> Code Repository
             </a>,
             <Link to="/blog-posts" className={classes.dropdownLink}>
               <ViewQuilt className={classes.dropdownIcons} /> Blog Posts

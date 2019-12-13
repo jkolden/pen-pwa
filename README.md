@@ -1,6 +1,6 @@
 # Penske Employee Learning Badge PaaS
 
-![version](https://img.shields.io/badge/version-1.0-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/jkolden/penske.svg?maxAge=2592000)](https://github.com/jkolden/penske/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/jkolden/penske.svg?maxAge=2592000)](https://github.com/jkolden/penske/issues?q=is%3Aissue+is%3Aclosed) [![Join the chat at https://gitter.im/NIT-dgp/General](https://badges.gitter.im/NIT-dgp/General.svg)](https://gitter.im/creative-tim-general/Lobby) [![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/E4aHAQy)
+![version](https://img.shields.io/badge/version-1.0-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/jkolden/penske.svg?maxAge=2592000)](https://github.com/jkolden/penske/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/jkolden/penske.svg?maxAge=2592000)](https://github.com/jkolden/penske/issues?q=is%3Aissue+is%3Aclosed)
 
 ## Objective and Overview
 
@@ -33,7 +33,7 @@ The solution consists of three components:
 
 This application uses the following Oracle Cloud ERP and HCM API's:
 
-[![erp](https://img.shields.io/badge/ERPIntegrationService-SOAP-orange.svg?maxAge=2592000)](https://docs.oracle.com/en/cloud/saas/financials/18c/oeswf/erp-integration-service-ErpIntegrationService-svc-9.html)
+[![erp](https://img.shields.io/badge/ERPIntegrationService-SOAP-orange.svg?maxAge=2592000&?logo=oracle)](https://docs.oracle.com/en/cloud/saas/financials/18c/oeswf/erp-integration-service-ErpIntegrationService-svc-9.html)
 [![api](https://img.shields.io/badge/HCMDataLoader-SOAP-orange.svg?maxAge=2592000)](https://docs.oracle.com/en/solutions/load-data-into-hcm-cloud/use-hcm-data-loader-integration-web-service1.html)
 [![checklist](https://img.shields.io/badge/AllocatedChecklists-REST-green.svg?maxAge=2592000)](https://docs.oracle.com/en/cloud/saas/global-human-resources/19b/farws/api-allocated-checklists.html)
 
@@ -46,7 +46,7 @@ This application uses the following Oracle Cloud ERP and HCM API's:
 
 The documentation for the Material Kit PRO React is hosted at our [website](https://demos.creative-tim.com/material-kit-pro-react/#/documentation/tutorial).
 
-## File Structure
+## How to Run
 
 How to run this application (assumes you have Docker installed locally):
 
@@ -84,30 +84,3 @@ We use GitHub Issues as the official bug tracker for the Material Kit PRO React.
 ## Technical Support or Questions
 
 If you have questions or need help integrating the product please [contact us](https://www.creative-tim.com/contact-us) instead of opening an issue.
-
-## Licensing
-
-- Copyright 2018 Creative Tim (https://www.creative-tim.com/)
-
-- Creative Tim [license](https://www.creative-tim.com/license)
-
-## Useful Links
-
-- [More products](https://www.creative-tim.com/bootstrap-themes) from Creative Tim
-- [Tutorials](https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w)
-- [Freebies](https://www.creative-tim.com/bootstrap-themes/free) from Creative Tim
-- [Affiliate Program](https://www.creative-tim.com/affiliates/new) (earn money)
-
-##### Social Media
-
-Twitter: <https://twitter.com/CreativeTim>
-
-Facebook: <https://www.facebook.com/CreativeTim>
-
-Dribbble: <https://dribbble.com/creativetim>
-
-Google+: <https://plus.google.com/+CreativetimPage>
-
-Instagram: <https://www.instagram.com/CreativeTimOfficial>
-
-# penske
