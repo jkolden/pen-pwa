@@ -1,6 +1,6 @@
 # Penske Employee Learning Badge PaaS
 
-![version](https://img.shields.io/badge/version-1.0-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/jkolden/penske.svg?maxAge=2592000)](https://github.com/jkolden/penske/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/jkolden/penske.svg?maxAge=2592000)](https://github.com/jkolden/penske/issues?q=is%3Aissue+is%3Aclosed) [![Join the chat at https://gitter.im/NIT-dgp/General](https://badges.gitter.im/NIT-dgp/General.svg)](https://gitter.im/creative-tim-general/Lobby) [![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/E4aHAQy)
+![version](https://img.shields.io/badge/version-1.0-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/jkolden/penske.svg?maxAge=2592000)](https://github.com/jkolden/penske/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/jkolden/penske.svg?maxAge=2592000)](https://github.com/jkolden/penske/issues?q=is%3Aissue+is%3Aclosed) [![Join the chat at https://gitter.im/NIT-dgp/General](https://badges.gitter.im/NIT-dgp/General.svg)](https://gitter.im/creative-tim-general/Lobby) [![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/E4aHAQy)[![Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Fjkolden%2Fpenske)]
 
 ## Objective and Overview
 
@@ -266,12 +266,6 @@ material-kit-pro
         └── SignupPage
             └── SignupPage.js
 ```
-
-## Browser Support
-
-At present, we officially aim to support the last two versions of the following browsers:
-
-<img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/chrome.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/firefox.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/edge.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/safari.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/opera.png" width="64" height="64">
 
 ## Resources
 
