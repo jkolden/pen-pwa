@@ -33,7 +33,7 @@ The solution consists of three components:
 
 This application uses the following Oracle Cloud ERP and HCM API's:
 
-[![erp](https://img.shields.io/badge/ERPIntegrationService-SOAP-orange.svg?maxAge=2592000&?logo=oracle)](https://docs.oracle.com/en/cloud/saas/financials/18c/oeswf/erp-integration-service-ErpIntegrationService-svc-9.html)
+[![erp](https://img.shields.io/badge/ERPIntegrationService-SOAP-orange.svg?maxAge=2592000&&logo=oracle)](https://docs.oracle.com/en/cloud/saas/financials/18c/oeswf/erp-integration-service-ErpIntegrationService-svc-9.html)
 [![api](https://img.shields.io/badge/HCMDataLoader-SOAP-orange.svg?maxAge=2592000)](https://docs.oracle.com/en/solutions/load-data-into-hcm-cloud/use-hcm-data-loader-integration-web-service1.html)
 [![checklist](https://img.shields.io/badge/AllocatedChecklists-REST-green.svg?maxAge=2592000)](https://docs.oracle.com/en/cloud/saas/global-human-resources/19b/farws/api-allocated-checklists.html)
 
