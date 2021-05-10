@@ -20,7 +20,7 @@ export default function BrakesBadgePage(props) {
       <a
         style={linkStyle}
         target="_blank"
-        href="https://ucf6-zhcq-fa-ext.oracledemos.com:443/hcmUI/faces/deeplink?objType=WLF_LEARN_SS_VIEW_COURSE&action=NONE&objKey=itemId%3D300000186248515"
+        href="https://ucf3-zwnp-fa-ext.oracledemos.com/hcmUI/faces/deeplink?objType=WLF_LEARN_LEARNING_ITEM&action=NONE&objKey=learningItemId%3D300000223561634"
       >
         Go To Learning >>
       </a>

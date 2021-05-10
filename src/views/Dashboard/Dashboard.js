@@ -75,7 +75,7 @@ function Dashboard() {
                   <img src={marc} alt="..." className={imageClasses} />
                 </div>
                 <div className={classes.name}>
-                  <h3 className={classes.title}>Charles Brown</h3>
+                  <h3 className={classes.title}>Kyle Church</h3>
                   <h6>
                     Position:{" "}
                     <Link to="/my-badges" style={{ padding: 10 }}>

@@ -34,7 +34,7 @@ function App() {
         <Switch>
           <Route path="/about-us" component={AboutUsPage} />
           <Redirect from="/" exact to="/my-profile" />
-          <Route path="/" component={Dashboard} name="Charles Brown" />
+          <Route path="/" component={Dashboard} name="Kyle Church" />
         </Switch>
       </Router>
     </div>
